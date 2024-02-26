@@ -14,7 +14,7 @@ ENABLE_UART                      := 1
 ENABLE_UART_DEBUG                := 0
 #
 # AirCopy 2.5 kB
-ENABLE_AIRCOPY                   := 0
+ENABLE_AIRCOPY                   := 1
 ENABLE_AIRCOPY_REMEMBER_FREQ     := 1
 ENABLE_AIRCOPY_RX_REBOOT         := 0
 #
@@ -22,7 +22,7 @@ ENABLE_AIRCOPY_RX_REBOOT         := 0
 ENABLE_FMRADIO_64_76             := 0
 ENABLE_FMRADIO_76_90             := 0
 ENABLE_FMRADIO_76_108            := 0
-ENABLE_FMRADIO_875_108           := 1
+ENABLE_FMRADIO_875_108           := 0
 ENABLE_FMRADIO_64_108            := 0
 #
 # NOAA 1.2 kB
@@ -58,7 +58,7 @@ ENABLE_SHOW_FREQ_IN_CHAN         := 1
 # small bold 580 B
 ENABLE_SMALL_BOLD                := 1
 # smallest font 2 kB
-#ENABLE_SMALLEST_FONT            := 0
+ENABLE_SMALLEST_FONT             := 1
 # trim trailing 44 B
 ENABLE_TRIM_TRAILING_ZEROS       := 0
 ENABLE_WIDE_RX                   := 1
@@ -68,14 +68,14 @@ ENABLE_TX_WHEN_AM                := 0
 ENABLE_F_CAL_MENU                := 0
 # FM DEV CAL 250 B
 ENABLE_FM_DEV_CAL_MENU           := 0
-ENABLE_TX_UNLOCK_MENU            := 0
+ENABLE_TX_UNLOCK_MENU            := 1
 #ENABLE_TX_POWER_CAL_MENU        := 0
 ENABLE_TX_POWER_FIX              := 1
 ENABLE_CTCSS_TAIL_PHASE_SHIFT    := 1
-ENABLE_CONTRAST                  := 0
+ENABLE_CONTRAST                  := 1
 ENABLE_BOOT_BEEPS                := 0
 ENABLE_FLASH_LIGHT_SOS_TONE      := 0
-ENABLE_SHOW_CHARGE_LEVEL         := 0
+ENABLE_SHOW_CHARGE_LEVEL         := 1
 ENABLE_REVERSE_BAT_SYMBOL        := 0
 ENABLE_FREQ_SEARCH_LNA           := 0
 ENABLE_FREQ_SEARCH_TIMEOUT       := 0
@@ -87,19 +87,19 @@ ENABLE_SCAN_RANGES               := 1
 # AM Fix 800 B
 ENABLE_AM_FIX                    := 1
 ENABLE_AM_FIX_SHOW_DATA          := 0
-#ENABLE_SQUELCH_MORE_SENSITIVE    := 0
+ENABLE_SQUELCH_MORE_SENSITIVE    := 1
 ENABLE_SQ_OPEN_WITH_UP_DN_BUTTS  := 1
 ENABLE_FASTER_CHANNEL_SCAN       := 1
 ENABLE_COPY_CHAN_TO_VFO_TO_CHAN  := 1
 # Tx Audio Bar 300 B
-ENABLE_TX_AUDIO_BAR              := 0
-ENABLE_TX_AUDIO_BACKLIGHT        := 0
+ENABLE_TX_AUDIO_BAR              := 1
+ENABLE_TX_AUDIO_BACKLIGHT        := 1
 # Side Button Menu 300 B
 ENABLE_SIDE_BUTT_MENU            := 0
 # Key Lock 400 B
 ENABLE_KEYLOCK                   := 0
 # panadapter 1.5kB
-ENABLE_PANADAPTER                := 1
+ENABLE_PANADAPTER                := 0
 ENABLE_PANADAPTER_PEAK_FREQ      := 0
 # single VFO 1.5kB
 ENABLE_SINGLE_VFO_CHAN           := 1

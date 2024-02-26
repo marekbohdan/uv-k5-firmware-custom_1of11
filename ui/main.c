@@ -111,8 +111,10 @@ void draw_bar(uint8_t *line, const int len, const int max_width)
 		if (g_center_line != CENTER_LINE_NONE && g_center_line != CENTER_LINE_AUDIO_BAR)
 			return false;
 
-		if (g_dtmf_call_state != DTMF_CALL_STATE_NONE)
-			return false;
+		#if defined(ENABLE_DTMF_CALLING)
+			if (g_dtmf_call_state != DTMF_CALL_STATE_NONE)
+				return false;
+		#endif
 
 		#if defined(ENABLE_ALARM) || (ENABLE_TX_TONE_HZ > 0)
 			if (g_alarm_state != ALARM_STATE_OFF)
@@ -663,7 +665,7 @@ void UI_DisplayCenterLine(void)
 		#endif
 
 		#ifdef ENABLE_SHOW_CHARGE_LEVEL
-			else
+			/*else*/
 			if (g_charging_with_type_c)
 			{	// show the battery charge state
 				if (
